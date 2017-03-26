@@ -6,7 +6,7 @@ OUT_DIR=out
 # ex)CROSS_COMPILE={android platform directory you downloaded}/android/prebuilt/linux-x86/aarch64/aarch64-linux-android-4.9/bin/aarch64-linux-android-
 COMMON_ARGS="-C $(pwd) O=$(pwd)/${OUT_DIR} ARCH=arm64 CROSS_COMPILE=aarch64-linux-android- KCFLAGS=-mno-android"
 
-export PATH=$(pwd)/../PLATFORM/prebuilts/gcc/linux-x86/aarch64/aarch64-linux-android-4.9/bin:$PATH
+export PATH=/home/thanhphat/aarch64-linux-android-4.9/bin:$PATH
 export SEC_BUILD_OPTION_HW_REVISION=02
 
 [ -d ${OUT_DIR} ] && rm -rf ${OUT_DIR}
